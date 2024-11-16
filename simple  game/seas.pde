@@ -1,0 +1,53 @@
+int sn = -20;
+int sn1 = -400;
+int sn2 = -340;
+int sn3 = -90;
+int sn4 = -600;
+int sn5 = -780;
+void seas(){
+   background(120,100,90);
+   fill(140,120,50);
+   rect(10,20,300,100);
+   noFill();
+   fill(255);
+   textSize(30);
+   text("season 1",40,50);
+   noFill();
+   fill(100,20,60);
+   rect(30,140,70,70);
+   rect(30,230,70,70);
+   rect(30,320,70,70);
+   rect(30,410,70,70);
+   noFill();
+   fill(255);
+   textSize(30);
+   text("by",150,180);
+   text("by",150,280);
+   text("by",150,360);
+   text("by",150,460);
+   noFill();
+   fill(255);
+   ellipse(15,sn,10,10);
+   ellipse(60,sn1,10,10);
+   ellipse(230,sn2,10,10);
+   ellipse(300,sn3,10,10);
+   ellipse(156,sn4,10,10);
+   ellipse(270,sn5,10,10);
+   noFill();
+   sn += 1;
+   sn1 += 1;
+   sn2 += 1;
+   sn3 += 1;
+   sn4 += 1;
+   sn5 += 1;
+   if(sn>500)sny = -20;
+   if(sn1>500)sny1 = -400;
+   if(sn2>500)sny2 = -340;
+   if(sn3>500)sny3 = -90;
+   if(sn4>500)sny4 = -600;
+   if(sn5>500)sny5 = -780;
+   if(mousePressed == true && mouseX > 10 && mouseX < 313 && mouseY >10 && mouseY < 114){
+      pr6 = 0;
+      meny();
+   }
+}
